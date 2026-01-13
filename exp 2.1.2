@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main() {
+	int n,i,num;
+	int posSum=0, negSum = 0;
+
+	// Input size 
+	scanf("%d",&n);
+
+	// Input array elements
+	for (i=0;  i < n; i++) {
+		scanf("%d", &num);
+		if (num > 0)
+			posSum += num;
+		else if (num < 0)
+			negSum += num;
+	}
+	printf("%d\n", posSum);
+	printf("%d\n", negSum);
+}
+		
+	
